@@ -12,6 +12,13 @@ exports.up = async function(knex) {
       table.text("name").notNull()
       table.text("description").notNull()
   })
+
+  await knex.schema.createTable("task", (table) => {
+      table.increments("id")
+      table.text("description").notNull()
+      table.text("notes").notNull()
+      table.integer("completed", 0)
+  })
 }
 
 exports.down = async function(knex) {
