@@ -8,6 +8,6 @@ exports.seed = function(knex) {
         { name: 'Marissa', description: 'Description One', completed: false},
         { name: 'Martha', description: 'Description Two', completed: false},
         { name: 'Maddie', description: 'Description Three', completed: false}
-      ]);
-    });
-};
+      ])
+    })
+}
