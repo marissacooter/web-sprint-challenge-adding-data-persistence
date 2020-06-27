@@ -10,7 +10,7 @@ function findById(id) {
         .first()
 }
 
-function add(projectData) {
+function addProject(projectData) {
     return db("project")
         .insert(projectData)
 }
@@ -18,5 +18,5 @@ function add(projectData) {
 module.exports = {
     find,
     findById,
-    add
+    addProject
 }
