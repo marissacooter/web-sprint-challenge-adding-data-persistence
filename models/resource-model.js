@@ -14,3 +14,9 @@ function addResource(resourceData) {
     return db("resource")
         .insert(resourceData)
 }
+
+module.exports = {
+    find,
+    findById,
+    addResource
+}
